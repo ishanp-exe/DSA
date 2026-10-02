@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Valid_Parentheses {
@@ -23,5 +24,12 @@ public class Valid_Parentheses {
             }
         }
         return stack.isEmpty();
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+
+         Valid_Parentheses obj = new Valid_Parentheses();
+        System.out.println(obj.isValid(s));
     }
 }
